@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui.MultiPageApps.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui.MultiPageApps"
+    Shell.FlyoutBehavior="Flyout">
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Image Source="header.png"></Image>
+        </Grid>
+    </Shell.FlyoutHeader>
+    <ShellContent Title="Cats" Icon="cat.png" ContentTemplate="{DataTemplate local:MainPage}" />
+    <ShellContent Title="Dogs" Icon="dog.png" ContentTemplate="{DataTemplate local:DogsPage}" />
+    <MenuItem Text="Help" IconImageSource="help.png" Clicked="MenuItem_Clicked"></MenuItem>
+    <Shell.FlyoutFooter>
+        <Grid>
+            <Image Source="footer.png"></Image>
+        </Grid>
+    </Shell.FlyoutFooter>
+</Shell>

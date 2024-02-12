@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.MultiPageApps.NavigationPages.Dog"
+             Title="Dog">
+    <VerticalStackLayout>
+        <Label Text="Welcome to DOG page!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="Beagle" x:Name="btnBeagle"></Button>
+        <Button Text="Bulldog" x:Name="btnBulldog"></Button>
+        <Button Text="Labrador" x:Name="btnLabrador"></Button>
+
+    </VerticalStackLayout>
+</ContentPage>

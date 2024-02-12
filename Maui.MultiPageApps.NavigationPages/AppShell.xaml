@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui.MultiPageApps.NavigationPages.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui.MultiPageApps.NavigationPages"
+    Shell.FlyoutBehavior="Flyout">
+    <FlyoutItem Title="Pets">
+        <ShellContent Title="Cat" Icon="cat.png" ContentTemplate="{DataTemplate local:Cat}"></ShellContent>
+        <ShellContent Title="Dog" Icon="dog.png" ContentTemplate="{DataTemplate local:Dog}"></ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="About">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    </FlyoutItem>
+</Shell>
